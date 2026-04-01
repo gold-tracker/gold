@@ -4,4 +4,57 @@
   padding: 0;
 }
 
+:root{
+
+  --title : #fcd600;
+
+ --text-heders :#748194 ;
+
+ --readable-text:#fff;
+
+ --backgroud:#021525;
+
+ --fcard-background:#13212;
+
+ --section-background:#091d2e; 
+}
+    body {
+      /* background-color:var(--backgroud) ; */
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background-color: var(--backgroud);
+    }
+
+    .card {
+      border-radius: 15px;
+      background-color: var(--fcard-background) ;
+
+    }
+
+    .form-control, .form-select {
+      border-radius: 10px;
+    }
+
+    .btn-custom {
+      background-color: var(--title)  ;
+      border: none;
+      border-radius: 10px;
+    }
+
+    .btn-custom:hover {
+      background-color: var() ;
+      border: 1px solid var(--title);
+      color: white;
+        }
+    .link{
+      color: var(--title)  ;
+    } 
+    .link:hover{
+      color: var(--text-heders) ;
+    }
+
+
 
