@@ -12,25 +12,34 @@
 <div class="card shadow p-4" style="width: 500px;">
   <h3 class="text-center mb-4 text-light ">Register To Gold Tracker</h3>
 
-  <form onsubmit="registerUser(event) ">
+  <form id="registerForm">
 
     <div class="mb-3">
       <input type="text" id="name" class="form-control" placeholder="Full Name" required>
+      <small id="nameError" class="text-danger"></small>
+
     </div>
 
     <div class="mb-3">
-      <input type="number" id="phone" class="form-control" placeholder="Phone Number" required>
+      <input type="text" id="phone" class="form-control" placeholder="Phone Number" required>
+      <small id="phoneError" class="text-danger"></small>
+
     </div>
 
     <div class="mb-3">
       <input type="email" id="email" class="form-control" placeholder="Email" required>
+      <small id="emailError" class="text-danger"></small>
     </div>
 
     <div class="mb-3">
       <input type="password" id="password" class="form-control" placeholder="Password" required>
+      <small id="passwordError" class="text-danger"></small>
+
     </div>
         <div class="mb-3">
-      <input type="password" id="confirm-password" class="form-control" placeholder="Confirm Password" required>
+      <input type="password" id="confirmPassword" class="form-control" placeholder="Confirm Password" required>
+      <small id="confirmPasswordError" class="text-danger"></small>
+
     </div>
 
     <div class="mb-3">
@@ -41,7 +50,7 @@
       </select>
     </div>
 
-    <button class="btn btn-custom w-100 ">Register</button>
+    <button type="submit" class="btn btn-custom w-100 ">Register</button>
   </form>
 
   <p class="text-center mt-3 text-light">
