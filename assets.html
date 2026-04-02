@@ -1,11 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Assets</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assets Management</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/assets.css">
 </head>
 <body>
-  
-</body>
+
+      <div class="news-content">
+        Gold Price Today: 24K = $65 | 21K = $57 | 18K = $49
+    </div>
+
+   
+    <header class="navbar">
+        <nav>
+            <h2 >Gold Tracker</h2>
+        </nav>
+    </header>
+    
+    <div class="mainclass">
+        
+        <h2 class="Title-page">Assets Page</h2>
+        
+        <div class="cardvalue">
+            <div class="shapcard">
+
+                <p class="txtcard">weights</p>
+                <p class="totalvalue" id="totalWeight">22 g</p>
+            </div>
+            <div class="shapcard">
+
+                <p class="txtcard">Purchase cost</p>
+                <p class="totalvalue" id="PurchaseCost">$1</p>
+
+            </div>
+            <div class="shapcard">
+
+                <p class="txtcard">current value</p>
+                <p class="totalvalue" id="CurrentValue">$0.00</p>
+
+            </div>
+            <div class="shapcard Profit-loss">
+
+                <p class="txtcard">Profit/loss</p>
+                <p class="totalvalue" id="ProfitLoss">$0.00</p>
+
+            </div>
+        </div>
+        
+
+    <div class="form-container">
+            <h3 class="form-title">Add New Assets </h3>
+        <form class="gold-form" id="goldForm">
+
+                <div class="input-group">
+                    <label>Type</label>
+                    <select  id="goldType">
+                        <option>Ingot</option>
+                        <option>Rashadi Lira</option>
+                        <option>Onsa</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>purity</label>
+                    <select id="goldKarat">
+                        <option>24 Karat</option>
+                        <option>21 Karat</option>
+                        <option>18 Karat</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>Purchase Price per Gram</label>
+                    <input id="priceGram" type="number" step="0.01" placeholder="Example: 55.00">
+                </div>
+
+                <div class="input-group">
+                    <label>Weight (Gram)</label>
+                    <input id="goldWeight" type="number" step="0.01" placeholder="Example: 10">
+                </div>
+
+                <div class="input-group">
+                    <label>Notes (Optional)</label>
+                    <input type="text" id="goldNotes" >
+                </div>
+
+                <div class="input-group">
+                    <label>Purchase Date</label>
+                    <input type="date" id="goldDate">
+                </div>
+
+                <div class="button-group">
+                    <button type="submit" class="add-btn">+ Add Assets </button>
+                </div>
+
+        </form>
+    </div>
+
+        <div class="assets-display-section">
+            <h3 class="section-subtitle">My Assets</h3>
+            
+            <div class="assets-scroll-container">
+                <div class="asset-item">
+                    <div class="asset-main-info">
+                        <div class="gold-icon-circle">🏛️</div>
+                        <div class="details">
+                            <span class="asset-type-karat">Ingot - 24K</span>
+                            <span class="asset-weight-date">10g • 2026-04-02</span>
+                        </div>
+                    </div>
+                    <div class="asset-financial-info">
+                        <div class="price-group">
+                            <span class="current-val">$650.00</span>
+                            <span class="profit-loss-val profit">+$45.20 (10%)</span>
+                        </div>
+                        <button class="remove-btn">🗑️</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+ </body>
 </html>
