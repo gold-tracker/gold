@@ -49,9 +49,12 @@
       border: 1px solid var(--title);
       color: white;
         }
+
     .link{
       color: var(--title)  ;
     } 
+
+    
     .link:hover{
       color: var(--text-heders) ;
     }
