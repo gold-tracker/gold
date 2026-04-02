@@ -1,5 +1,195 @@
+
+
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
+body {
+    margin-top: 150px;
+    background-color: var(--backgroud);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: var(--readable-text);
+    line-height: 1.6;
+    padding-top: 120px;
+}
+
+
+.news-content {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #0c1625;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    color: var(--title);
+    z-index: 1000;
+}
+
+
+.navbar {
+    position: fixed;
+    top: 40px;
+    width: 100%;
+    height: 80px;
+    background-color: var(--section-background);
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    z-index: 999;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.mainclass {
+    max-width: 1150px;
+    margin: 50px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.Title-page {
+    color: var(--title);
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.cardvalue {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.shapcard {
+    background-color: var(--section-background);
+    flex: 1;
+    min-width: 220px;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.shapcard:hover {
+    transform: translateY(-5px);
+}
+
+.txtcard {
+    color: var(--text-heders);
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.totalvalue {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.form-container {
+    background-color: var(--section-background);
+    padding: 35px;
+    border-radius: 15px;
+}
+
+.form-title{
+    color: var(--title);
+    margin-bottom: 12px;
+}
+
+.gold-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1 1 calc(50% - 10px);
+}
+
+.input-group input,
+.input-group select {
+    background-color: var(--backgroud);
+    border: 1px solid rgba(255,255,255,0.1);
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.button-group {
+    flex: 1 1 100%;
+}
+
+.add-btn {
+    background-color: var(--title);
+    color: #021525;
+    border: none;
+    padding: 14px 40px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.assets-scroll-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.asset-item {
+    background-color: var(--section-background);
+    padding: 15px 25px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.asset-main-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.gold-icon-circle {
+    width: 45px;
+    height: 45px;
+    background-color: #1a2a3a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.asset-financial-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.current-val {
+    color: var(--title);
+    font-weight: bold;
+}
+
+.profit { color: #2ecc71; }
+.loss { color: #ff6b6b; }
+
+.remove-btn {
+    background: none;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    font-size: 18px;
+}
+

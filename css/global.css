@@ -14,17 +14,18 @@
 
  --backgroud:#021525;
 
- --fcard-background:#13212;
+ --fcard-background:#13212f;
 
  --section-background:#091d2e; 
+
+    
+
 }
     body {
-      /* background-color:var(--backgroud) ; */
       height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
-
       background-color: var(--backgroud);
     }
 
