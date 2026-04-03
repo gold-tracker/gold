@@ -50,8 +50,7 @@
 let cache = [];
 
 if(!(localStorage.getItem("cache"))){
-
-
+ 
     fetch('https://api.gold-api.com/history?symbol=XAU&groupBy=year&startTimestamp=1420070400&endTimestamp=1767225600&orderBy=asc', {
     method: 'GET',
     headers: {
@@ -146,7 +145,9 @@ new Chart(ctx, {
 
 
 let gramPrice=0;
+
 calldata();
+
 function calldata(){
 
     fetch("https://api.gold-api.com/price/XAU/USD")
@@ -158,7 +159,7 @@ function calldata(){
         console.log(res);    
         console.log(price);
         
-        document.querySelector(".hero-info .price-display .main-price").textContent=`$ ${price}`
+        document.querySelector(".hero-info .price-display .main-price").textContent=jodCurrency ?`JOD ${usdToJod(price)}/g` : `$ ${price}`
         
         document.querySelector(".hero-info .price-display .decimal").textContent= `.${twoDecimals(price)}`
         
@@ -174,6 +175,8 @@ function calldata(){
 }
     
     
+
+
 setInterval(()=>{
         calldata();    
 },60000)
@@ -189,6 +192,8 @@ function refrech(){
     // console.log(`athis ${jodCurrency}`)
         // document.querySelector(".hero-info .price-display .main-price").textContent= `$ ${price}`
         // document.querySelector(".hero-info .price-display .decimal").textContent= `.${twoDecimals(price)}`
+        document.querySelector(".hero-info .price-display .main-price").textContent=jodCurrency ?`JOD${usdToJod(gramPrice * 28.3495)}` : `$ ${gramPrice * 28.3495}`
+
         document.querySelector("#gold24 .asset-price").textContent=jodCurrency ? `JOD ${usdToJod(price24k(gramPrice))}/g` : `$ ${price24k(gramPrice)}/g` ;
         document.querySelector("#gold21 .asset-price").textContent=jodCurrency ? `JOD ${usdToJod(price21k(gramPrice))}/g` : `$ ${price21k(gramPrice)}/g`;
         document.querySelector("#gold18 .asset-price").textContent=jodCurrency ? `JOD ${usdToJod(price18k(gramPrice))}/g` : `$ ${price18k(gramPrice)}/g` ;

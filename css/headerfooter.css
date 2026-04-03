@@ -2,52 +2,6 @@
 
 
 
-
-/* Ticker */
-.ticker-container {
-  background-color: rgba(0, 0, 0, 0.8);
-  border-bottom: 1px solid var(--white-5);
-  padding: 8px 0;
-  overflow: hidden;
-}
-
-.ticker-track {
-  display: flex;
-  width: max-content;
-  animation: marquee 30s linear infinite;
-}
-
-.ticker-content {
-  display: flex;
-  gap: 48px;
-  padding: 0 24px;
-}
-
-.ticker-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-
-.dot { font-size: 12px; }
-.dot.green { color: var(--green); }
-.dot.gold { color: var(--gold); }
-.ticker-item .value { color: white; }
-.ticker-item span:not(.dot):not(.value) { color: var(--white-60); }
-
-@keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-
-
-
-
 /* Navbar */
 .navbar {
   display: flex;
