@@ -6,7 +6,7 @@
 
 :root{
 
-  --title : #fcd600;
+  --title : #fcd600;    
 
  --text-heders :#748194 ;
 
@@ -14,13 +14,15 @@
 
  --backgroud:#021525;
 
- --fcard-background:#13212f;
+ --header-background:#020919;
 
  --section-background:#091d2e; 
 
-    
-
+ --priceUp: #4ade80;
+  
+ --priceDown: #f87171;   
 }
+
     body {
       height: 100vh;
       display: flex;
@@ -50,9 +52,12 @@
       border: 1px solid var(--title);
       color: white;
         }
+
     .link{
       color: var(--title)  ;
     } 
+
+    
     .link:hover{
       color: var(--text-heders) ;
     }
