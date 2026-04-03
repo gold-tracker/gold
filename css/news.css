@@ -1,6 +1,6 @@
 .news-container {
   width: 100%;
-  overflow: hidden;
+   overflow: hidden; /*to hide the outside of container and that make the slider */
   background: var(--section-background);
   color: #fff;
   height: 32px;
@@ -14,7 +14,7 @@
 .news-track {
   display: inline-block;
   white-space: nowrap;
-  padding-left: 100%;
+   padding-left: 100%; /*to make the news text start from right and move to left */
   animation: scrollNews 20s linear infinite;
   font-size: 14px;
 }
@@ -28,11 +28,11 @@
 }
 
 @keyframes scrollNews {
-  0% {
-    transform: translateX(0%);
+ 0% {  /* start point */
+    transform: translateX(0%);/* same place */
   }
-  100% {
-    transform: translateX(-100%);
+  100% {/* end point */
+    transform: translateX(-100%); /*  left */
   }
 }
 

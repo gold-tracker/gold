@@ -13,23 +13,19 @@
 <body>
 
 <div id="news-placeholder"></div>
-
 <script src="js/news.js"></script>
-
 <script>
   fetch("news.html")
     .then(res => res.text())
     .then(data => {
       document.getElementById("news-placeholder").innerHTML = data;
-          loadNews(); // 🔥 مهم
-
+          loadNews(); 
     });
 </script>
 
-   
     <header class="navbar">
         <nav>
-            <h2 >Gold Tracker</h2>
+            <a class="logo" href="index.html">Gold Tracker</a>
         </nav>
     </header>
     
