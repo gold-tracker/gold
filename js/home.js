@@ -154,8 +154,9 @@ function calldata(){
     .then(res =>res.json())
     .then(res => {
         let price = res.price;
+        localStorage.setItem("price",`${price}`);
         gramPrice = ounceToGram(price);
-        
+    
         
         
         document.querySelector(".hero-info .price-display .main-price").textContent=jodCurrency ?`JOD ${usdToJod(price)}/g` : `$ ${price}`
