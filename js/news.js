@@ -3,7 +3,7 @@ async function loadNews() {
   const container = document.getElementById("newsTrack");
 
   try {
-    const res = await fetch(`https://gnews.io/api/v4/search?q=Google&lang=en&max=5&apikey=76002fccc159d55dea7d08e5595ff85d`);
+    const res = await fetch(`https://gnews.io/api/v4/search?q=Google&lang=en&max=5&apikey=8cd4d4c753eceb8ecc2cf74ad9c1cd62`);
     const data = await res.json();
 
     let newsHTML = "";
