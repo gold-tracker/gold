@@ -154,6 +154,7 @@ function calldata(){
     .then(res =>res.json())
     .then(res => {
         let price = res.price;
+        localStorage.setItem("price",`${price}`);
         gramPrice = ounceToGram(price);
         
         console.log(res);    
