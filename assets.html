@@ -6,17 +6,26 @@
     <title>Assets Management</title>
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/assets.css">
+    <link rel="stylesheet" href="css/news.css">
+
+    
 </head>
 <body>
 
-      <div class="news-content">
-        Gold Price Today: 24K = $65 | 21K = $57 | 18K = $49
-    </div>
+<div id="news-placeholder"></div>
+<script src="js/news.js"></script>
+<script>
+  fetch("news.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("news-placeholder").innerHTML = data;
+          loadNews(); 
+    });
+</script>
 
-   
     <header class="navbar">
         <nav>
-            <h2 >Gold Tracker</h2>
+            <a class="logo" href="index.html">Gold Tracker</a>
         </nav>
     </header>
     

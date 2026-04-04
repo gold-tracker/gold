@@ -52,6 +52,13 @@ body {
     gap: 30px;
 }
 
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: -0.05em;
+  color: var(--title);
+  text-decoration: none;
+}
 .Title-page {
     color: var(--title);
     font-size: 28px;
