@@ -7,16 +7,18 @@
 }
 
 body {
-    margin-top: 150px;
+    display: block;
+    /* margin-top: 150px; */
     background-color: var(--backgroud);
     font-family: 'Segoe UI', Arial, sans-serif;
     color: var(--readable-text);
     line-height: 1.6;
-    padding-top: 120px;
+    
+    
 }
 
 
-.news-content {
+/* .news-content {
     position: fixed;
     top: 0;
     width: 100%;
@@ -27,10 +29,10 @@ body {
     padding: 0 30px;
     color: var(--title);
     z-index: 1000;
-}
+} */
 
 
-.navbar {
+/* .navbar {
     position: fixed;
     top: 40px;
     width: 100%;
@@ -41,7 +43,7 @@ body {
     padding: 0 30px;
     z-index: 999;
     border-bottom: 1px solid rgba(255,255,255,0.1);
-}
+} */
 
 .mainclass {
     max-width: 1150px;
@@ -199,4 +201,74 @@ body {
     cursor: pointer;
     font-size: 18px;
 }
+
+.section-subtitle {
+    color: var(--title);
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+
+
+.search-assets {
+    width: 100%;
+    background-color: var(--backgroud);
+    border: 1px solid rgba(255,255,255,0.1);
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom  : 20px;
+    outline: none;
+}
+
+.search-assets::placeholder {
+    color: #aaa;
+}
+
+.View-assets {
+    margin-top: 15px;
+    min-height: 20px;
+    font-size: 14px;
+}
+
+.asset-weight{
+    color: var(--title);
+    margin-right: 8px;
+    margin-left: 5px;
+}
+
+.asset-type{
+    color: var(--title);
+}
+
+.price-group {
+  display: flex;
+  gap: 20px; 
+}
+
+.asset-item {
+  margin-bottom: 24px;
+}
+
+.asset-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.gold-icon-circle{
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+
 
