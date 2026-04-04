@@ -156,8 +156,7 @@ function calldata(){
         let price = res.price;
         gramPrice = ounceToGram(price);
         
-        console.log(res);    
-        console.log(price);
+        
         
         document.querySelector(".hero-info .price-display .main-price").textContent=jodCurrency ?`JOD ${usdToJod(price)}/g` : `$ ${price}`
         

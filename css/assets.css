@@ -13,6 +13,7 @@ body {
     color: var(--readable-text);
     line-height: 1.6;
     padding-top: 120px;
+    
 }
 
 
@@ -192,4 +193,49 @@ body {
     cursor: pointer;
     font-size: 18px;
 }
+
+.section-subtitle {
+    color: var(--title);
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+
+
+.search-assets {
+    width: 100%;
+    background-color: var(--backgroud);
+    border: 1px solid rgba(255,255,255,0.1);
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom  : 20px;
+    outline: none;
+}
+
+.search-assets::placeholder {
+    color: #aaa;
+}
+
+.View-assets {
+    margin-top: 15px;
+    min-height: 20px;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
