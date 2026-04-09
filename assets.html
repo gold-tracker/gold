@@ -7,8 +7,12 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/assets.css">
     <link rel="stylesheet" href="css/news.css">
-
+    <link rel="stylesheet" href="css/headerfooter.css">
     
+    <script src="js/header.js"defer></script>
+    <script src="js/auth.js"defer></script>
+    <script src="js/calculator.js"defer></script>
+    <script src="js/assets.js" defer></script> 
 </head>
 <body>
 
@@ -23,11 +27,36 @@
     });
 </script>
 
-    <header class="navbar">
-        <nav>
-            <a class="logo" href="index.html">Gold Tracker</a>
-        </nav>
-    </header>
+    <nav class="navbar">
+
+        <div class="nav-left">
+          <div ><a class="logo" href="index.html">Golden Tracker</a></div>
+        </div>
+          
+          <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="assets.html">MY Assets</a>
+          </div>
+
+        <div class="nav-right">
+
+          <div class="botton-container">
+            <button class="active" id="usdBtn">USD</button>
+            <button  id="jodBtn">JOD</button>
+          </div>
+
+          <div class="botton-container" id="loginBtnCon">
+            <button class="active" id="loginBtn" >Login</button>
+            <button id="signUpBtn">SignUp</button>
+          </div>
+
+          <div class="botton-container" id="lotoutBtnCon">
+            <button class="active" id="logoutBtn" >LogOut</button>
+          </div>
+
+        </div>
+
+      </nav>
     
     <div class="mainclass">
         
@@ -37,12 +66,12 @@
             <div class="shapcard">
 
                 <p class="txtcard">weights</p>
-                <p class="totalvalue" id="totalWeight">22 g</p>
+                <p class="totalvalue" id="totalWeight">0 g</p>
             </div>
             <div class="shapcard">
 
                 <p class="txtcard">Purchase cost</p>
-                <p class="totalvalue" id="PurchaseCost">$1</p>
+                <p class="totalvalue" id="PurchaseCost">$0.00</p>
 
             </div>
             <div class="shapcard">
@@ -60,8 +89,10 @@
         </div>
         
 
-    <div class="form-container">
+    <div class="form-container" id="formContainer">
+        
             <h3 class="form-title">Add New Assets </h3>
+
         <form class="gold-form" id="goldForm">
 
                 <div class="input-group">
@@ -102,35 +133,28 @@
                     <input type="date" id="goldDate">
                 </div>
 
+                <input type="file" id="goldImage"  accept="image/*">
+
                 <div class="button-group">
                     <button type="submit" class="add-btn">+ Add Assets </button>
                 </div>
 
+                
+
         </form>
+
+        <div id="messageAssets" class="View-assets"></div>
+
     </div>
 
-        <div class="assets-display-section">
+        <div class="assets-display-section" id="assetsSection">
             <h3 class="section-subtitle">My Assets</h3>
-            
+            <input type="search" id="searchAssets" class="search-assets" placeholder= "Search assets.">
             <div class="assets-scroll-container">
-                <div class="asset-item">
-                    <div class="asset-main-info">
-                        <div class="gold-icon-circle">🏛️</div>
-                        <div class="details">
-                            <span class="asset-type-karat">Ingot - 24K</span>
-                            <span class="asset-weight-date">10g • 2026-04-02</span>
-                        </div>
-                    </div>
-                    <div class="asset-financial-info">
-                        <div class="price-group">
-                            <span class="current-val">$650.00</span>
-                            <span class="profit-loss-val profit">+$45.20 (10%)</span>
-                        </div>
-                        <button class="remove-btn">🗑️</button>
-                    </div>
-                </div>
+                 <div id="assetsContainerlist" class="assets-container-list"></div>
             </div>
         </div>
+        
 
     </div>
  </body>
