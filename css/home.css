@@ -102,7 +102,7 @@
 
 /* Market Pulse  */
 
-.market-pulse {
+.market-pulse,.news-section {
   padding: 48px 32px;
   background-color: var(--backgroud);
 }
