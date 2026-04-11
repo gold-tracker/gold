@@ -38,6 +38,7 @@
   grid-template-columns: 1fr 3fr;
   gap: 48px;
   background-color: var(--section-background);
+  margin-top: 5rem;
 }
 
 .hero-info{
@@ -91,13 +92,11 @@
   width: 100% !important ; 
   height: 100%;
   color: var(--title);
-  /* background-image: url("../assets/icons/World_Map_Blank.svg"); */
+  background-image: url("../assets/icons/World_Map_Blank.svg");
   background-position: center;
   background-size: cover;
   
-
 } 
-
 
 
 /* Market Pulse  */

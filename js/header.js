@@ -1,11 +1,11 @@
 const loginBtnCon = document.getElementById("loginBtnCon");
 const lotoutBtnCon = document.getElementById("lotoutBtnCon");
+const assetsLink = document.querySelectorAll(".nav-links a")[1];
 const loginBtn = document.getElementById("loginBtn");
 const signUpBtn = document.getElementById("signUpBtn");
 const logoutBtn = document.getElementById("logoutBtn");
 const usdBtn = document.getElementById("usdBtn")
 const jodBtn = document.getElementById("jodBtn")
-
 
 let jodCurrency = false; 
 
@@ -14,9 +14,11 @@ let user = JSON.parse(sessionStorage.getItem("currentUser"));
 if (!user) {
     lotoutBtnCon.style.display="none";
     loginBtnCon.style.display="flex";
+    assetsLink.style.display="none";
 } else {
     lotoutBtnCon.style.display="flex";
     loginBtnCon.style.display="none";
+    assetsLink.style.display="inline";
 }
 
 
@@ -34,6 +36,7 @@ signUpBtn.addEventListener("click" , (e)=>{
 logoutBtn.addEventListener("click" , (e)=>{
     e.preventDefault();
     logout();
+    window.location.reload();
 })
 
 
