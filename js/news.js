@@ -58,7 +58,8 @@ async function loadNews() {
 
     NewsSlider(articles); 
     NewsCards(articles);  
-console.log("News loaded");
+
+    console.log("News loaded");
   } catch (err) {
     console.error(err);
   }
