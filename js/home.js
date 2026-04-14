@@ -159,16 +159,16 @@ function calldata(){
     
         
         
-        document.querySelector(".hero-info .price-display .main-price").textContent=jodCurrency ?`JOD ${usdToJod(price)}/g` : `$ ${price}`
+        document.querySelector(".hero-info .price-display .main-price").textContent=jodCurrency ?`JD ${Number(usdToJod(price)).toFixed(0)}` : `$${Number(price).toFixed(0)}`
         
-        document.querySelector(".hero-info .price-display .decimal").textContent= `.${twoDecimals(price)}`
+        document.querySelector(".hero-info .price-display .decimal").textContent= `.${twoDecimals(price)} (oz)`
         
-        document.querySelector("#gold24 .asset-price").textContent=jodCurrency ? `JOD ${usdToJod(price24k(gramPrice))}/g` : `$ ${price24k(gramPrice)}/g` ;
-        document.querySelector("#gold21 .asset-price").textContent=jodCurrency ? `JOD ${usdToJod(price21k(gramPrice))}/g` : `$ ${price21k(gramPrice)}/g`;
-        document.querySelector("#gold18 .asset-price").textContent=jodCurrency ? `JOD ${usdToJod(price18k(gramPrice))}/g` : `$ ${price18k(gramPrice)}/g` ;
-        document.querySelector("#goldBar .asset-price").textContent=jodCurrency ? `JOD ${usdToJod(bar1000g(gramPrice))}`: `$ ${bar1000g(gramPrice)}`;
-        document.querySelector("#engCoin .asset-price").textContent=jodCurrency ? `JOD ${usdToJod(englishCoin(gramPrice))}` : `$ ${englishCoin(gramPrice)}`;
-        document.querySelector("#rashCoin .asset-price").textContent= jodCurrency? `JOD ${usdToJod(rashadiCoin(gramPrice))}` : `$ ${rashadiCoin(gramPrice)}`;
+        document.querySelector("#gold24 .asset-price").textContent=jodCurrency ? `JD ${usdToJod(price24k(gramPrice))}/g` : `$ ${price24k(gramPrice)}/g` ;
+        document.querySelector("#gold21 .asset-price").textContent=jodCurrency ? `JD ${usdToJod(price21k(gramPrice))}/g` : `$ ${price21k(gramPrice)}/g`;
+        document.querySelector("#gold18 .asset-price").textContent=jodCurrency ? `JD ${usdToJod(price18k(gramPrice))}/g` : `$ ${price18k(gramPrice)}/g` ;
+        document.querySelector("#goldBar .asset-price").textContent=jodCurrency ? `JD ${usdToJod(bar1000g(gramPrice))}`: `$ ${bar1000g(gramPrice)}`;
+        document.querySelector("#engCoin .asset-price").textContent=jodCurrency ? `JD ${usdToJod(englishCoin(gramPrice))}` : `$ ${englishCoin(gramPrice)}`;
+        document.querySelector("#rashCoin .asset-price").textContent= jodCurrency? `JD ${usdToJod(rashadiCoin(gramPrice))}` : `$ ${rashadiCoin(gramPrice)}`;
         
         
     });
@@ -192,14 +192,14 @@ function refrech(){
     // console.log(`athis ${jodCurrency}`)
         // document.querySelector(".hero-info .price-display .main-price").textContent= `$ ${price}`
         // document.querySelector(".hero-info .price-display .decimal").textContent= `.${twoDecimals(price)}`
-        document.querySelector(".hero-info .price-display .main-price").textContent=jodCurrency ?`JOD${usdToJod(gramPrice * 28.3495)}` : `$ ${gramPrice * 28.3495}`
+        document.querySelector(".hero-info .price-display .main-price").textContent=jodCurrency ?`JD${Number(usdToJod(gramPrice * 28.3495)).toFixed(0)}` : `$ ${Number((gramPrice * 28.3495)).toFixed(0)}`
 
-        document.querySelector("#gold24 .asset-price").textContent=jodCurrency ? `JOD ${usdToJod(price24k(gramPrice))}/g` : `$ ${price24k(gramPrice)}/g` ;
-        document.querySelector("#gold21 .asset-price").textContent=jodCurrency ? `JOD ${usdToJod(price21k(gramPrice))}/g` : `$ ${price21k(gramPrice)}/g`;
-        document.querySelector("#gold18 .asset-price").textContent=jodCurrency ? `JOD ${usdToJod(price18k(gramPrice))}/g` : `$ ${price18k(gramPrice)}/g` ;
-        document.querySelector("#goldBar .asset-price").textContent=jodCurrency ? `JOD ${usdToJod(bar1000g(gramPrice))}`: `$ ${bar1000g(gramPrice)}`;
-        document.querySelector("#engCoin .asset-price").textContent=jodCurrency ? `JOD ${usdToJod(englishCoin(gramPrice))}` : `$ ${englishCoin(gramPrice)}`;
-        document.querySelector("#rashCoin .asset-price").textContent= jodCurrency? `JOD ${usdToJod(rashadiCoin(gramPrice))}` : `$ ${rashadiCoin(gramPrice)}`;
+        document.querySelector("#gold24 .asset-price").textContent=jodCurrency ? `JD ${usdToJod(price24k(gramPrice))}/g` : `$ ${price24k(gramPrice)}/g` ;
+        document.querySelector("#gold21 .asset-price").textContent=jodCurrency ? `JD ${usdToJod(price21k(gramPrice))}/g` : `$ ${price21k(gramPrice)}/g`;
+        document.querySelector("#gold18 .asset-price").textContent=jodCurrency ? `JD ${usdToJod(price18k(gramPrice))}/g` : `$ ${price18k(gramPrice)}/g` ;
+        document.querySelector("#goldBar .asset-price").textContent=jodCurrency ? `JD ${usdToJod(bar1000g(gramPrice))}`: `$ ${bar1000g(gramPrice)}`;
+        document.querySelector("#engCoin .asset-price").textContent=jodCurrency ? `JD ${usdToJod(englishCoin(gramPrice))}` : `$ ${englishCoin(gramPrice)}`;
+        document.querySelector("#rashCoin .asset-price").textContent= jodCurrency? `JD ${usdToJod(rashadiCoin(gramPrice))}` : `$ ${rashadiCoin(gramPrice)}`;
         
 }
 
